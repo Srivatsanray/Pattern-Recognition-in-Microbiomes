@@ -97,7 +97,7 @@ elif choice == "Modelling":
                 if choice_of_model:
                     if st.toggle("Include Cross Validation"):
                         build_model(df, classifiers[choice_of_model], True)
-                    else 
+                    else:
                         build_model(df, classifiers[choice_of_model], False)
 
         if classification == "Compare Models":
