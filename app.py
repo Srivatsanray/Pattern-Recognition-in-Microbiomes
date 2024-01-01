@@ -95,7 +95,10 @@ elif choice == "Modelling":
             choice_of_model = st.selectbox('Choose the predictive model', list(classifiers.keys()))
             if st.button('Run Modelling'):
                 if choice_of_model:
-                    build_model(df, classifiers[choice_of_model])
+                    if st.toggle("Include Cross Validation")
+                        build_model(df, classifiers[choice_of_model], True)
+                    else 
+                        build_model(df, classifiers[choice_of_model], False)
 
         if classification == "Compare Models":
             if st.button('Run Modelling'):
