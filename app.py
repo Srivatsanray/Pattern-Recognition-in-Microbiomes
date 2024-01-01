@@ -42,14 +42,8 @@ if choice == "Upload":
             metadata.rename(columns={metadata.columns[0]: "Sample"}, inplace=True)
             with st.form("Transform"):
                 st.header("Merging the datasets")
-                if 'selected_tax_level' not in st.session_state:
-                    st.session_state.selected_tax_level = "Kingdom"
-                choice_of_index = st.selectbox('Choose your index', list(tax.columns),
-                                               index=list(tax.columns).index(st.session_state.selected_tax_level))
-                if 'selected_target' not in st.session_state:
-                    st.session_state.selected_target = "building_setting"
-                target = st.selectbox('Choose your target', list(metadata.columns),
-                                      index=list(metadata.columns).index(st.session_state.selected_target))
+                choice_of_index = st.selectbox('Choose your index', list(tax.columns))
+                target = st.selectbox('Choose your target', list(metadata.columns))
                 if st.form_submit_button("Transform"):
                     df = merge_operations(df, tax)
                     df = drop_columns(df, list(tax.columns), choice_of_index)

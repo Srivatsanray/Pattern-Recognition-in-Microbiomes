@@ -1,6 +1,5 @@
 from pycaret.classification import *
 import streamlit as st
-from explainerdashboard import ExplainerDashboard
 
 
 @st.cache_data(ttl=3600)
