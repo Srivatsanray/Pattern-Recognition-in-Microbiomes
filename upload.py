@@ -35,7 +35,6 @@ def drop_columns(data, columns, indice):
     return data
 
 
-@st.cache_resource
 def merge_operations(data, tax):
     data = pd.merge(data, tax, on=data.columns[0], how='inner')
     return data
