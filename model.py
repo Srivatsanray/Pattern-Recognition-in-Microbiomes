@@ -6,7 +6,7 @@ import streamlit as st
 def build_model(data, model_choice):
     setup(data=data, target="Target")
     st.dataframe(pull(), hide_index=True, use_container_width=True)
-    mod = create_model(model_choice,cross_validation=False)
+    mod = create_model(model_choice,return_train_score=True)
     evaluate_model(mod)
     st.dataframe(pull(), use_container_width=True)
     plot_model(mod, plot='confusion_matrix', display_format='streamlit')
