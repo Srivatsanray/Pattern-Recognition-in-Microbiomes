@@ -19,4 +19,5 @@ The coded app contains four sections. Some sections are yet to be completed and 
 - Modeling
 - Download
 
-
+## Upload 
+This section is designed to process and model our dataset. Please ensure that you upload the OTUs, taxonomic, and metadata tables. Ensure that all columns in the sampled tables are named correctly. Use a single space (' ') as the separator for the OTUs and tax files, and use a tab space ('\t') for the metadata.
