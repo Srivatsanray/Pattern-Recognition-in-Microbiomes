@@ -5,5 +5,6 @@ This repository aims to develop a web application to process and build a machine
 # Pre-requisites
 Before running this app, make sure to install the required modules
 
-```pip install -r requirements.txt
+```
+pip install -r requirements.txt
 ```
