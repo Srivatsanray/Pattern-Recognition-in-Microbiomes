@@ -12,6 +12,14 @@ or
 ```
 python -m pip install -r requirements.txt
 ```
+
+After completing the above step, the user can download the other files and execute the command below to host the web app locally
+
+```
+python streamlit run app.py
+```
+Make sure the path is referenced properly.
+
 # Decription
 The coded app contains four sections. Some sections are yet to be completed and hence warned about.
 - Upload
