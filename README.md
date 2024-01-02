@@ -12,3 +12,11 @@ or
 ```
 python -m pip install -r requirements.txt
 ```
+# Decription
+The coded app contains four sections. Some sections are yet to be completed and hence warned about.
+- Upload
+- Profiling (incomplete)
+- Modeling
+- Download
+
+
