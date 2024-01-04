@@ -45,4 +45,4 @@ This is built with the idea that the user might want to identify the best modeli
 ## Download
 This section is designed to allow users to download the chosen model for the analysis (with default parameters), which can later be appropriately tuned by the user
 
-Check out the webapp using this link (https://pattern-recognition-in-microbiomes-iitm.streamlit.app/)
+Check out the webapp using this link [Pattern Recognition](https://pattern-recognition-in-microbiomes-iitm.streamlit.app/)
